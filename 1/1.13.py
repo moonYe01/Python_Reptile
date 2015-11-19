@@ -15,6 +15,14 @@ rows_by_fname = sorted(rows, key=itemgetter('fname'))
 rows_by_uid = sorted(rows, key=itemgetter('uid'))
 rows_by_lfname = sorted(rows, key=itemgetter('lname','fname'))
 
+minr = min(rows, key=itemgetter('uid'))
+maxr = max(rows, key=itemgetter('uid'))
+
+
 print(rows_by_fname)
 print(rows_by_uid)
 print(rows_by_lfname)
+
+print(minr)
+print(maxr)
+
